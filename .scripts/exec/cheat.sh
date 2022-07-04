@@ -5,10 +5,13 @@ selected=`printf "$languages\n$core_utils" | fzf`
 echo "selected: $selected"
 
 read -p "query: " query
+echo "THE QUERY"
+echo $query
 
 if echo $languages | grep -qs "$selected" ; then
     curl cht.sh/$selected/`echo $query | tr ' ' '+'`
 else
     curl cht.sh/$selected~$query
 fi
+
 

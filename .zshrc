@@ -1,5 +1,4 @@
 export ZSH="$HOME/.oh-my-zsh"
-export PATH=$PATH:/Users/mvmo/Library/Python/3.8/bin
 
 ZSH_THEME="lambda"
 # ZSH_THEME="cloud"
@@ -21,7 +20,12 @@ if type brew &>/dev/null; then
   for d in ${HOMEBREW_PREFIX}/opt/*/libexec/gnubin; do NEWPATH=$d:$NEWPATH; done
   # I actually like that man grep gives the BSD grep man page
   #for d in ${HOMEBREW_PREFIX}/opt/*/libexec/gnuman; do export MANPATH=$d:$MANPATH; done
- export PATH=$(echo ${NEWPATH} | tr ':' '\n' | cat -n | sort -uk2 | sort -n | cut -f2- | xargs | tr ' ' ':')
+  PATH=$(echo ${NEWPATH} | tr ':' '\n' | cat -n | sort -uk2 | sort -n | cut -f2- | xargs | tr ' ' ':')
 fi
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+export PATH=$PATH
+
+source $HOME/.scripts/load.sh
+
