@@ -25,7 +25,11 @@ fi
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
+CONFIG_DIR="$(echo $HOME/.config.d)"
+
+export STARSHIP_CONFIG="$CONFIG_DIR/starship.toml"
 export PATH=$PATH
 
 source $HOME/.scripts/load.sh
 
+eval "$(starship init zsh)"
