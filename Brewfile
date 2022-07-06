@@ -63,8 +63,6 @@ brew "node"
 brew "openvpn"
 # Terminal multiplexer with VT100/ANSI terminal emulation
 brew "screen"
-# Zsh prompt for Astronauts
-brew "spaceship"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Display word differences between text files
@@ -96,5 +94,5 @@ cask "minecraft"
 # Open-source code editor
 cask "visual-studio-code"
 
-brew "spaceship"
+brew "starship"
 brew "fzf"
