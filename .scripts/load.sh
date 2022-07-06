@@ -4,7 +4,6 @@ script_executable_path=$HOME/.scripts/exec.d/
 executable_scripts=$(find $script_executable_path -type f -name '*.sh' -not -name '*.sh.swp' | sed 's/^.*\///g' | sed 's/\.sh$//g')
 
 for script in $executable_scripts; do
-    echo $script
     alias "$(basename ${script%.sh})"="$script"
 done
 
