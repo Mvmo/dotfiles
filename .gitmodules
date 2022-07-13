@@ -1,3 +1,6 @@
 [submodule ".oh-my-zsh/plugins/fzf-brew"]
 	path = .oh-my-zsh/plugins/fzf-brew
 	url = https://github.com/thirteen37/fzf-brew
+[submodule ".oh-my-zsh/plugins/zsh-autosuggestions"]
+	path = .oh-my-zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
