@@ -1,0 +1,3 @@
+[submodule ".oh-my-zsh/plugins/fzf-brew"]
+	path = .oh-my-zsh/plugins/fzf-brew
+	url = https://github.com/thirteen37/fzf-brew
