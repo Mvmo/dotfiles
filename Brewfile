@@ -96,3 +96,4 @@ cask "visual-studio-code"
 
 brew "starship"
 brew "fzf"
+brew "nvim"
