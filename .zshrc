@@ -5,7 +5,7 @@ ZSH_THEME="lambda"
 # ZSH_THEME="agnoster"
 
 ENABLE_CORRECTION="true"
-plugins=(git fzf-brew)
+plugins=(git fzf-brew zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
