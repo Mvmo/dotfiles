@@ -13,7 +13,8 @@ vim.opt.scrolloff = 10
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undofile = true
-vim.opt.undodir = "~/.vim/undodir"vim.opt.expandtab = true
+vim.opt.undodir = "$HOME/.vim/undodir"
+vim.opt.expandtab = true
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 0
 vim.opt.shiftwidth = 4
@@ -31,3 +32,5 @@ vim.cmd([[
     autocmd BufWritePost plugins.lua source <afile> | PackerSync
   augroup end
 ]])
+
+require("keyboard_config")
