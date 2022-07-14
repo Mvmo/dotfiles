@@ -24,11 +24,13 @@ if type brew &>/dev/null; then
 fi
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
-
 CONFIG_DIR="$(echo $HOME/.config.d)"
 
 export STARSHIP_CONFIG="$CONFIG_DIR/starship.toml"
 export PATH=$PATH
+
+export XDG_CONFIG_HOME=$CONFIG_DIR
+export XDG_DATA_HOME="$HOME/.data.d"
 
 source $HOME/.scripts/load.sh
 
