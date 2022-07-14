@@ -2,6 +2,10 @@
 
 format = "$directory$aws$buf$c$conda$dart$docker_context$elm$golang$haskell$elixir$zig$java$rust$python$spack$julia$nodejs$package$nim$nix_shell$memory_usage$git_commit$git_branch$git_status$character"
 
+[character]
+success_symbol = "[λ](bold green)"
+error_symbol = "[λ](bold red)"
+
 [aws]
 symbol = "  "
 
