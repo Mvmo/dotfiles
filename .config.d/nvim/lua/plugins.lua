@@ -14,4 +14,11 @@ return require("packer").startup(function()
             { "nvim-lua/plenary.nvim" }
         }
     }
+    use {
+        "s1n7ax/nvim-terminal",
+        config = function()
+            vim.o.hidden = true
+            require('nvim-terminal').setup()
+        end,
+    }
 end)
