@@ -21,4 +21,10 @@ return require("packer").startup(function()
             require('nvim-terminal').setup()
         end,
     }
+    use { "ziglang/zig.vim" }
+    use "pangloss/vim-javascript"
+    use "leafgarland/typescript-vim"
+    use "peitalin/vim-jsx-typescript"
+    use { "styled-components/vim-styled-components", branch = "main" }
+    use "jparise/vim-graphql"
 end)
