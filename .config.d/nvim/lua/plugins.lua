@@ -22,9 +22,15 @@ return require("packer").startup(function()
         end,
     }
     use { "ziglang/zig.vim" }
+
+    use "mxw/vim-jsx"
     use "pangloss/vim-javascript"
-    use "leafgarland/typescript-vim"
-    use "peitalin/vim-jsx-typescript"
-    use { "styled-components/vim-styled-components", branch = "main" }
-    use "jparise/vim-graphql"
+
+    use { 
+        "preservim/nerdtree",
+        requires = {
+            { "Xuyuanp/nerdtree-git-plugin" },
+            { "ryanoasis/vim-devicons" }
+        }
+    }
 end)
