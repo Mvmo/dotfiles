@@ -28,6 +28,8 @@ fi
 CONFIG_DIR="$(echo $HOME/.config.d)"
 
 export STARSHIP_CONFIG="$CONFIG_DIR/starship.toml"
+
+PATH="$PATH:/Users/mvmo/zls"
 export PATH=$PATH
 
 export XDG_CONFIG_HOME=$CONFIG_DIR
