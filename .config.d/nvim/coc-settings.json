@@ -1,8 +1,6 @@
 {
-   "languageserver": {
-       "zls" : {
-           "command": "command_or_path_to_zls",
-           "filetypes": ["zig"]
-       }
-   }
+    "zig.enabled": true,
+    "zig.startUpMessage": true,
+    "zig.path": "/Users/mvmo/zls/zls",
+    "zig.debugLog": false
 }
