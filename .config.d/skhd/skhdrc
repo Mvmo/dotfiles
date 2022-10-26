@@ -1,0 +1,28 @@
+## Quickly restart the yabai launch agent
+hyper - z : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+
+# close active app
+hyper - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
+
+# open terminal
+hyper - return : /Applications/iTerm.app/Contents/MacOS/iTerm2
+
+hyper - u : yabai -m window --swap west
+hyper - i : yabai -m window --swap north
+hyper - o : yabai -m window --swap south
+hyper - y : yabai -m window --swap east
+
+hyper - j : yabai -m window --focus first
+hyper - k : yabai -m window --focus last
+hyper - h : yabai -m window --focus prev || yabai -m window --focus last
+hyper - l : yabai -m window --focus next || yabai -m window --focus first
+
+# switch display and keep focus on active window
+hyper - s : cw=$(yabai -m query --windows --window | jq -re ".id") && $(yabai -m window --display next || yabai -m window --display first) && yabai -m window --focus "$cw"
+
+# focus display
+hyper - 1 : yabai -m window --display 1 yabai -m display --focus 1
+hyper - 2 : yabai -m window --display 2 yabai -m display --focus 2 
+hyper - 3 : yabai -m window --display 3 yabai -m display --focus 3
+
+hyper - f : yabai -m window --toggle zoom-fullscreen
