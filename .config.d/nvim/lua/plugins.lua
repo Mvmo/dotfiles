@@ -3,10 +3,18 @@ vim.cmd [[
 ]]
 
 return require("packer").startup(function()
-    use 'wbthomason/packer.nvim'
+    use "wbthomason/packer.nvim"
     use { "ellisonleao/gruvbox.nvim" }
     use { "neoclide/coc.nvim", branch = "release" }
     use { "jiangmiao/auto-pairs" }
+    use { "jparise/vim-graphql" }
+
+    use { 
+        "nvim-treesitter/nvim-treesitter",
+        run = ":TSUpdate",
+    }
+    use { "nvim-treesitter/nvim-treesitter-refactor" }
+
     use {
         "nvim-telescope/telescope.nvim",
         tag = "0.1.0",
@@ -14,6 +22,7 @@ return require("packer").startup(function()
             { "nvim-lua/plenary.nvim" }
         }
     }
+
     use {
         "s1n7ax/nvim-terminal",
         config = function()
@@ -33,4 +42,21 @@ return require("packer").startup(function()
             { "ryanoasis/vim-devicons" }
         }
     }
+
+    use {
+        "pantharshit00/vim-prisma"
+    }
+
+    use {
+        "ThePrimeagen/refactoring.nvim",
+        requires = {
+            {"nvim-lua/plenary.nvim"},
+            {"nvim-treesitter/nvim-treesitter"}
+        }
+    }
+
+    use {
+        "ThePrimeagen/harpoon"
+    }
+
 end)

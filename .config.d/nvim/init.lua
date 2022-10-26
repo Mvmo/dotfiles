@@ -34,3 +34,6 @@ vim.cmd([[
 ]])
 
 require("keyboard_config")
+require("treesitter_config")
+
+require("refactoring").setup({})
