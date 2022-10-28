@@ -56,9 +56,11 @@ yabai -m config active_window_opacity 1.0
 ## WTIH SIP DISABLED (Limelight build into Yabai, enable it here)
 yabai -m config window_border on
 yabai -m config window_border_width 3
-yabai -m config active_window_border_color 0xFF40FF00
+yabai -m config active_window_border_color 0xFFF0B365
 yabai -m config normal_window_border_color 0x00FFFFFF
 yabai -m config insert_feedback_color        0xffd75f5f
+
+yabai -m config external_bar main:30:5
 
 ## some other settings
 yabai -m config auto_balance off
