@@ -5,7 +5,7 @@ ZSH_THEME="lambda"
 # ZSH_THEME="cloud"
 # ZSH_THEME="agnoster"
 
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 plugins=(git fzf-brew zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
@@ -38,3 +38,7 @@ export XDG_DATA_HOME="$HOME/.data.d"
 source $HOME/.scripts/load.sh
 
 eval "$(starship init zsh)"
+
+export NVM_DIR="$HOME/.config.d/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
