@@ -5,6 +5,11 @@ vim.cmd [[
     nnoremap <C-j>  <cmd>m+<cr>
     nnoremap <C-k>  <cmd>m-2<cr>
 
+    nmap <Up> :wincmd k<cr>
+    nmap <Down> :wincmd j<cr>
+    nmap <Left> :wincmd h<cr>
+    nmap <Right> :wincmd l<cr>
+
     nnoremap <leader>ff <cmd>Telescope find_files<cr>
     nnoremap <leader>fg <cmd>Telescope live_grep<cr>
     nnoremap <leader>fb <cmd>Telescope buffers<cr>
@@ -20,7 +25,6 @@ vim.cmd [[
 
     nnoremap <C-h> <cmd>lua require("harpoon.ui").toggle_quick_menu()<cr>
     nnoremap <leader>a <cmd>lua require("harpoon.mark").add_file()<cr>
-
     nnoremap <leader>j <cmd>lua require("harpoon.ui").nav_file(1)<cr>
     nnoremap <leader>k <cmd>lua require("harpoon.ui").nav_file(2)<cr>
     nnoremap <leader>l <cmd>lua require("harpoon.ui").nav_file(3)<cr>
