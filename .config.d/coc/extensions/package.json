@@ -4,8 +4,12 @@
     "coc-eslint": ">=1.5.8",
     "coc-html": ">=1.6.1",
     "coc-json": ">=1.4.2",
+    "coc-kotlin": ">=0.0.9",
     "coc-prettier": ">=9.3.1",
     "coc-tsserver": ">=1.10.5",
-    "coc-zig": ">=0.6.1"
-  }
+    "coc-zig": ">=0.6.1",
+    "coc-rust-analyzer": ">=0.69.4"
+  },
+  "disabled": [],
+  "locked": []
 }
