@@ -19,6 +19,9 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 0
 vim.opt.shiftwidth = 4
 vim.opt.termguicolors = true
+vim.o.updatetime = 300
+vim.o.incsearch = false
+vim.wo.signcolumn = 'yes'
 
 require("plugins")
 
@@ -35,5 +38,7 @@ vim.cmd([[
 
 require("keyboard_config")
 require("treesitter_config")
+
+require("vgit_config")
 
 require("refactoring").setup({})

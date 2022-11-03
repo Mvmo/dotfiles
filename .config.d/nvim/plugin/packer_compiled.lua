@@ -140,6 +140,11 @@ _G.packer_plugins = {
     path = "/Users/mvmo/.data.d/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["vgit.nvim"] = {
+    loaded = true,
+    path = "/Users/mvmo/.data.d/nvim/site/pack/packer/start/vgit.nvim",
+    url = "https://github.com/tanvirtin/vgit.nvim"
+  },
   ["vim-devicons"] = {
     loaded = true,
     path = "/Users/mvmo/.data.d/nvim/site/pack/packer/start/vim-devicons",

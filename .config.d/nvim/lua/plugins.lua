@@ -8,6 +8,7 @@ return require("packer").startup(function()
     use { "neoclide/coc.nvim", branch = "release" }
     use { "jiangmiao/auto-pairs" }
     use { "jparise/vim-graphql" }
+    use { "nvim-lua/plenary.nvim" }
 
     use { 
         "nvim-treesitter/nvim-treesitter",
@@ -57,6 +58,13 @@ return require("packer").startup(function()
 
     use {
         "ThePrimeagen/harpoon"
+    }
+
+    use {
+        'tanvirtin/vgit.nvim',
+        requires = {
+            'nvim-lua/plenary.nvim'
+        }
     }
 
 end)
