@@ -1,7 +1,5 @@
 require('vgit').setup({
   keymaps = {
-    ['n <leader>k'] = function() require('vgit').hunk_up() end,
-    ['n <leader>j'] = function() require('vgit').hunk_down() end,
     ['n <leader>gs'] = function() require('vgit').buffer_hunk_stage() end,
     ['n <leader>gr'] = function() require('vgit').buffer_hunk_reset() end,
     ['n <leader>gp'] = function() require('vgit').buffer_hunk_preview() end,
