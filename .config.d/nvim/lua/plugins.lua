@@ -1,5 +1,5 @@
 vim.cmd [[
-    packadd packer.nvim
+packadd packer.nvim
 ]]
 
 return require("packer").startup(function()
@@ -31,17 +31,18 @@ return require("packer").startup(function()
             require('nvim-terminal').setup()
         end,
     }
+
     use { "ziglang/zig.vim" }
 
     use "mxw/vim-jsx"
     use "pangloss/vim-javascript"
 
-    use { 
-        "preservim/nerdtree",
+    use {
+        'nvim-tree/nvim-tree.lua',
         requires = {
-            { "Xuyuanp/nerdtree-git-plugin" },
-            { "ryanoasis/vim-devicons" }
-        }
+            'nvim-tree/nvim-web-devicons', -- optional, for file icons
+        },
+        tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
 
     use {

@@ -16,10 +16,9 @@ vim.cmd [[
     nnoremap <leader>fh <cmd>Telescope help_tags<cr>
     nnoremap <leader>t  <cmd>lua NTGlobal["terminal"]:toggle()<cr>
 
-    nnoremap <leader>n  <cmd>NERDTreeFocus<cr>
-    nnoremap <C-n> :NERDTree<cr>
-    nnoremap <C-t> :NERDTreeToggle<cr>
-    nnoremap <C-f> :NERDTreeFind<cr>
+    nnoremap <leader>n  <cmd>NvimTreeFocus<cr>
+    nnoremap <C-t> <cmd>NvimTreeToggle<cr>
+    nnoremap <C-f> <cmd>NvimTreeFindFile<cr>
 
     vnoremap <leader>rr <Esc><cmd>lua require("telescope").extensions.refactoring.refactors()<cr>
 
