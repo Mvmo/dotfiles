@@ -24,10 +24,10 @@ vim.cmd [[
 
     nnoremap <C-h> <cmd>lua require("harpoon.ui").toggle_quick_menu()<cr>
     nnoremap <leader>a <cmd>lua require("harpoon.mark").add_file()<cr>
-    nnoremap <leader>j <cmd>lua require("harpoon.ui").nav_file(1)<cr>
-    nnoremap <leader>k <cmd>lua require("harpoon.ui").nav_file(2)<cr>
-    nnoremap <leader>l <cmd>lua require("harpoon.ui").nav_file(3)<cr>
-    nnoremap <leader>ö <cmd>lua require("harpoon.ui").nav_file(4)<cr>
+    nnoremap <leader>h <cmd>lua require("harpoon.ui").nav_file(1)<cr>
+    nnoremap <leader>j <cmd>lua require("harpoon.ui").nav_file(2)<cr>
+    nnoremap <leader>k <cmd>lua require("harpoon.ui").nav_file(3)<cr>
+    nnoremap <leader>l <cmd>lua require("harpoon.ui").nav_file(4)<cr>
 
     nnoremap <leader>r gd[{V%::s/<C-R>///gc<left><left><left>
     nnoremap <leader>R gD:%s/<C-R>///gc<left><left><left>
