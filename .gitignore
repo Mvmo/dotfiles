@@ -6,3 +6,4 @@ node_modules/
 .config.d/jgit
 .config.d/configstore
 .config.d/nvm
+.config.d/nvim/plugin
