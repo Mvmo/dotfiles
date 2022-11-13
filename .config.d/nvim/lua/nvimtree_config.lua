@@ -5,8 +5,18 @@ require("nvim-tree").setup({
     view = {
         adaptive_size = true,
         mappings = {
+            custom_only = true,
             list = {
-                { key = "u", action = "dir_up" },
+                { key = "a", action = "create" },
+                { key = "d", action = "remove" },
+                { key = "c", action = "copy" },
+                { key = "x", action = "cut" },
+                { key = "p", action = "paste" },
+                { key = "r", action = "rename" },
+                { key = "<C-r>", action = "full_rename" },
+                { key = "R", action = "refresh" },
+                { key = "<cr>", action = "edit" },
+                { key ="`", action = "preview" }
             },
         },
     },
