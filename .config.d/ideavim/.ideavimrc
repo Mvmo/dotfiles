@@ -1,3 +1,4 @@
 let mapleader=" "
 
-
+nmap <leader>w <cmd>w<cr>
+nmap <leader>q <cmd>q<cr>
