@@ -1,4 +1,7 @@
 vim.cmd [[
+    nnoremap x "_x
+    nnoremap <leader>d "_d
+
     nnoremap <leader>w  <cmd>w<cr>
     nnoremap <leader>q  <cmd>q<cr>
 
