@@ -42,3 +42,8 @@ eval "$(starship init zsh)"
 export NVM_DIR="$HOME/.config.d/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias cat="bat"
+alias ls="exa -a"
+
+export EDITOR="/opt/homebrew/bin/nvim"
