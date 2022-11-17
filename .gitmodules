@@ -4,3 +4,6 @@
 [submodule ".oh-my-zsh/plugins/zsh-autosuggestions"]
 	path = .oh-my-zsh/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule ".config.d/uebersicht/widgets/clock-bar"]
+	path = .config.d/uebersicht/widgets/clock-bar
+	url = https://github.com/Mvmo/clock-bar-uebersicht
