@@ -13,8 +13,6 @@ return require("packer").startup(function()
         run = ":TSUpdate",
     }
 
-    use { "nvim-treesitter/nvim-treesitter-refactor" }
-
     use {
         "nvim-telescope/telescope.nvim",
         tag = "0.1.0",
