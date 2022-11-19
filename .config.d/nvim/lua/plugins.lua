@@ -3,16 +3,16 @@ packadd packer.nvim
 ]]
 
 return require("packer").startup(function()
-    use "wbthomason/packer.nvim"
-    use { "ellisonleao/gruvbox.nvim" }
+    use { "wbthomason/packer.nvim" }
 
-    use { "jparise/vim-graphql" }
+    use { "ellisonleao/gruvbox.nvim" }
     use { "nvim-lua/plenary.nvim" }
 
     use { 
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
     }
+
     use { "nvim-treesitter/nvim-treesitter-refactor" }
 
     use {
