@@ -6,7 +6,6 @@ return require("packer").startup(function()
     use "wbthomason/packer.nvim"
     use { "ellisonleao/gruvbox.nvim" }
 
-    use { "jiangmiao/auto-pairs" }
     use { "jparise/vim-graphql" }
     use { "nvim-lua/plenary.nvim" }
 
