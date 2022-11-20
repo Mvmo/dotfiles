@@ -30,10 +30,6 @@ return require("packer").startup(function()
     }
 
     use {
-        "pantharshit00/vim-prisma"
-    }
-
-    use {
         "ThePrimeagen/refactoring.nvim",
         requires = {
             {"nvim-lua/plenary.nvim"},
