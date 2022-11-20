@@ -7,6 +7,8 @@ return require("packer").startup(function()
 
     use { "ellisonleao/gruvbox.nvim" }
     use { "nvim-lua/plenary.nvim" }
+    use { "ThePrimeagen/harpoon" }
+    use { "neovim/nvim-lspconfig" }
 
     use { 
         "nvim-treesitter/nvim-treesitter",
@@ -27,9 +29,5 @@ return require("packer").startup(function()
             'nvim-tree/nvim-web-devicons', -- optional, for file icons
         },
         tag = 'nightly' -- optional, updated every week. (see issue #1193)
-    }
-
-    use {
-        "ThePrimeagen/harpoon"
     }
 end)
