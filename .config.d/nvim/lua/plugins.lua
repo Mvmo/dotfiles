@@ -32,12 +32,4 @@ return require("packer").startup(function()
     use {
         "ThePrimeagen/harpoon"
     }
-
-    use {
-        'tanvirtin/vgit.nvim',
-        requires = {
-            'nvim-lua/plenary.nvim'
-        }
-    }
-
 end)
