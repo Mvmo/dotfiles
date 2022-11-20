@@ -21,8 +21,6 @@ return require("packer").startup(function()
         }
     }
 
-    use { "ziglang/zig.vim" }
-
     use "mxw/vim-jsx"
     use "pangloss/vim-javascript"
 
