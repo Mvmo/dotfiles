@@ -42,3 +42,4 @@ vim.cmd([[
 require("keyboard_config")
 require("treesitter_config")
 require("nvimtree_config")
+require("lsp-config")
