@@ -21,9 +21,6 @@ return require("packer").startup(function()
         }
     }
 
-    use "mxw/vim-jsx"
-    use "pangloss/vim-javascript"
-
     use {
         'nvim-tree/nvim-tree.lua',
         requires = {
