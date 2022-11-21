@@ -8,9 +8,17 @@ return require("packer").startup(function()
     use { "ellisonleao/gruvbox.nvim" }
     use { "nvim-lua/plenary.nvim" }
     use { "ThePrimeagen/harpoon" }
-    use { "neovim/nvim-lspconfig" }
 
-    use { 
+    use { "neovim/nvim-lspconfig" }
+    use { "hrsh7th/cmp-nvim-lsp" }
+    use { "hrsh7th/cmp-buffer" }
+    use { "hrsh7th/cmp-path" }
+    use { "hrsh7th/nvim-cmp" }
+
+    use { "L3MON4D3/LuaSnip" }
+    use { "saadparwaiz1/cmp_luasnip" }
+
+    use {
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
     }
@@ -30,4 +38,5 @@ return require("packer").startup(function()
         },
         tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
+
 end)
