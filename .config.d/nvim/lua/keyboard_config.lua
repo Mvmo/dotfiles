@@ -34,6 +34,4 @@ vim.cmd [[
 
     nnoremap <leader>r gd[{V%::s/<C-R>///gc<left><left><left>
     nnoremap <leader>R gD:%s/<C-R>///gc<left><left><left>
-
-    inoremap <silent><expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 ]]
