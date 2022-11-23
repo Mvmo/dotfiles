@@ -8,6 +8,7 @@ return require("packer").startup(function()
     use { "ellisonleao/gruvbox.nvim" }
     use { "nvim-lua/plenary.nvim" }
     use { "ThePrimeagen/harpoon" }
+    use { "jiangmiao/auto-pairs" }
 
     use { "neovim/nvim-lspconfig" }
     use { "hrsh7th/cmp-nvim-lsp" }
