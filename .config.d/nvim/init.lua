@@ -33,13 +33,19 @@ vim.cmd [[
 ]]
 
 vim.cmd([[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
-  augroup end
+    augroup packer_user_config
+        autocmd!
+        autocmd BufWritePost plugins.lua source <afile> | PackerSync
+    augroup end
+]])
+
+vim.cmd([[
+    autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
 ]])
 
 require("keyboard_config")
 require("treesitter_config")
 require("nvimtree_config")
 require("lsp-config")
+
+require('nvim-ts-autotag').setup()

@@ -40,4 +40,11 @@ return require("packer").startup(function()
         tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
 
+
+    -- fill the gap in syntax highlighting done by treesitter
+    use { "leafgarland/typescript-vim" }
+    use { "peitalin/vim-jsx-typescript" }
+
+    use { "windwp/nvim-ts-autotag" }
+
 end)
