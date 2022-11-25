@@ -1,10 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 export VIM_CONFIG="$HOME/.config.d/nvim/"
 
-ZSH_THEME="lambda"
-# ZSH_THEME="cloud"
-# ZSH_THEME="agnoster"
-
 ENABLE_CORRECTION="false"
 plugins=(git fzf-brew zsh-autosuggestions)
 
