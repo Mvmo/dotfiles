@@ -9,3 +9,4 @@ node_modules/
 .config.d/nvim/plugin
 .config.d/uebersicht/widgets/running-mario.widget
 .config.d/coc
+.config.d/ghc
