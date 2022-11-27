@@ -2,9 +2,9 @@ local lspconfig = require("lspconfig")
 local lsp_defaults = lspconfig.util.default_config
 
 lsp_defaults.capabilities = vim.tbl_deep_extend(
-"force",
-lsp_defaults.capabilities,
-require("cmp_nvim_lsp").default_capabilities()
+    "force",
+    lsp_defaults.capabilities,
+    require("cmp_nvim_lsp").default_capabilities()
 )
 
 -- LUA
@@ -28,6 +28,17 @@ lspconfig.sumneko_lua.setup({
 })
 
 lspconfig.tsserver.setup({})
+
+lspconfig.rust_analyzer.setup({
+    cmd = { "rustup", "run", "nightly", "rust-analyzer" },
+    settings = {
+        rust = {
+            unstable_features = true,
+            build_on_save = false,
+            all_features = true,
+        }
+    }
+});
 
 vim.api.nvim_create_autocmd("LspAttach", {
     desc = "LspActions",
@@ -56,20 +67,20 @@ vim.api.nvim_create_autocmd("LspAttach", {
         bufmap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<cr>')
 
         -- Renames all references to the symbol under the cursor
-        bufmap('n', '<F2>', '<cmd>lua vim.lsp.buf.rename()<cr>')
+        bufmap('n', 'rr', '<cmd>lua vim.lsp.buf.rename()<cr>')
 
         -- Selects a code action available at the current cursor position
         -- bufmap('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>')
         -- bufmap('x', '<F4>', '<cmd>lua vim.lsp.buf.range_code_action()<cr>')
 
         -- Show diagnostics in a floating window
-        -- bufmap('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>')
+        bufmap('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<cr>')
 
         -- Move to the previous diagnostic
-        -- bufmap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<cr>')
+        bufmap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<cr>')
 
         -- Move to the next diagnostic
-        -- bufmap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<cr>')
+        bufmap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<cr>')
     end
 })
 
