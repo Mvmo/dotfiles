@@ -56,3 +56,6 @@ require("nvimtree_config")
 require("lsp-config")
 
 require('nvim-ts-autotag').setup()
+
+require("feline").setup({})
+

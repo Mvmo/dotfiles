@@ -16,6 +16,8 @@ return require("packer").startup(function()
     use { "hrsh7th/cmp-path" }
     use { "hrsh7th/nvim-cmp" }
 
+    use { 'feline-nvim/feline.nvim' } 
+
     use { "L3MON4D3/LuaSnip" }
     use { "saadparwaiz1/cmp_luasnip" }
 
@@ -31,6 +33,7 @@ return require("packer").startup(function()
             { "nvim-lua/plenary.nvim" }
         }
     }
+
 
     use {
         'nvim-tree/nvim-tree.lua',
