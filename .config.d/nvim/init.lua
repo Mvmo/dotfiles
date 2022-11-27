@@ -32,6 +32,13 @@ vim.cmd [[
     colorscheme gruvbox
 ]]
 
+vim.cmd [[hi LineNr guifg=#e78a4e]]
+
+vim.cmd [[
+    set cursorline
+    hi CursorLine term=bold cterm=bold guibg=Grey30
+]]
+
 vim.cmd([[
     augroup packer_user_config
         autocmd!
