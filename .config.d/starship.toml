@@ -1,12 +1,9 @@
 format = """
-[ ](bg:#9A348E)\
+[ ↪ \ 
 $username\
-[](bg:#DA627D fg:#9A348E)\
 $directory\
-[](fg:#DA627D bg:#FCA17D)\
 $git_branch\
 $git_status\
-[](fg:#FCA17D bg:#86BBD8)\
 $c\
 $elixir\
 $elm\
@@ -17,11 +14,10 @@ $julia\
 $nodejs\
 $nim\
 $rust\
-[](fg:#86BBD8 bg:#06969A)\
 $docker_context\
-[](fg:#06969A bg:#33658A)\
 $time\
-[ ](fg:#33658A)\
+ λ ](bg:#0066cc)\
+[ ](fg:#0066cc)
 """
 
 # Disable the blank line at the start of the prompt
@@ -30,14 +26,14 @@ $time\
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
-style_user = "bg:#9A348E"
-style_root = "bg:#9A348E"
-format = '[$user ]($style)'
+style_user = "fg:#ffffff"
+style_root = "fg:#ffffff"
+format = '$user ($style)'
 
 [directory]
-style = "bg:#DA627D"
-format = "[ $path ]($style)"
-truncation_length = 3
+style = ""
+format = "$path"
+truncation_length = 3 
 truncation_symbol = "…/"
 
 # Here is how you can shorten some long paths by text replacement
@@ -76,11 +72,11 @@ format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
 [git_branch]
 symbol = ""
 style = "bg:#FCA17D"
-format = '[[ $symbol $branch ](bg:#FCA17D)]($style)'
+format = ' $symbol $branch '
 
 [git_status]
 style = "bg:#FCA17D"
-format = '[[($all_status$ahead_behind )](bg:#FCA17D)]($style)'
+format = '<($all_status$ahead_behind)> '
 
 [golang]
 symbol = " "
@@ -118,8 +114,8 @@ style = "bg:#86BBD8"
 format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
 
 [time]
-disabled = false
+disabled = true 
 time_format = "%R" # Hour:Minute Format
 style = "bg:#33658A"
-format = '[[ λ $time ](bg:#33658A)]($style)'
+format = '[[$time](bg:#33658A)]($style)'
 
