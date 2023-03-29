@@ -1,4 +1,13 @@
+set NERDTree
+
+set visualbell
+
 let mapleader=" "
 
-nmap <leader>w <cmd>w<cr>
-nmap <leader>q <cmd>q<cr>
+nmap <leader>ff :action GotoFile<cr>
+
+nmap <C-t> :NERDTreeToggle<cr>
+nmap <leader>n :NERDTreeFocus<cr>
+nmap <leader>w :w<cr>
+nmap <leader>q :q<cr>
+
