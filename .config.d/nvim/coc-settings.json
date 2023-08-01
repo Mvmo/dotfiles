@@ -1,6 +1,0 @@
-{
-    "zig.enabled": true,
-    "zig.startUpMessage": true,
-    "zig.path": "/Users/mvmo/zls/zls",
-    "zig.debugLog": false
-}
