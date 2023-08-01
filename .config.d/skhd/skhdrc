@@ -32,3 +32,5 @@ hyper - t : open -a "/Applications/iTerm.app" && open -a "/Applications/iTerm.ap
 hyper - m : open -a "/Applications/Spotify.app" && open -a "/Applications/Spotify.app"
 hyper - b : open -a "/Applications/Firefox.app" && open -a "/Applications/Firefox.app"
 hyper - c : open -a "/Applications/Discord.app" && open -a "/Applications/Discord.app" 
+hyper - r : idea
+hyper - x : open -a "/Applications/Adobe XD/Adobe XD.app" && open -a "/Applications/Adobe XD/Adobe XD.app"
