@@ -1,5 +1,5 @@
 ## Quickly restart the yabai launch agent
-hyper - z : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+# hyper - n : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
 # close active app
 hyper - backspace : yabai -m window --close
@@ -20,7 +20,7 @@ hyper - l : yabai -m window --focus next || yabai -m window --focus first
 hyper - s : cw=$(yabai -m query --windows --window | jq -re ".id") && $(yabai -m window --display next || yabai -m window --display first) && yabai -m window --focus "$cw"
 
 hyper - f : yabai -m window --toggle zoom-fullscreen
-hyper - g : yabai -m window --minimize 
+hyper - g : yabai -m window --minimize
 
 hyper - left : yabai -m window --resize left:-20:0
 hyper - down : yabai -m window --resize bottom:0:-20
@@ -29,8 +29,13 @@ hyper - right : yabai -m window --resize right:20:0
 
 # opens iterm instance if existant and if not it creates one with default profile
 hyper - t : open -a "/Applications/iTerm.app" && open -a "/Applications/iTerm.app"
+hyper - v : open -a "/Applications/Visual Studio Code.app" && open -a "/Applications/Visual Studio Code.app"
+hyper - z : open -a "/Applications/Zed.app" && open -a "/Applications/Zed.app"
 hyper - m : open -a "/Applications/Spotify.app" && open -a "/Applications/Spotify.app"
-hyper - b : open -a "/Applications/Firefox.app" && open -a "/Applications/Firefox.app"
-hyper - c : open -a "/Applications/Discord.app" && open -a "/Applications/Discord.app" 
-hyper - r : idea
-hyper - x : open -a "/Applications/Adobe XD/Adobe XD.app" && open -a "/Applications/Adobe XD/Adobe XD.app"
+hyper - b : open -a "/Applications/Zen.app" && open -a "/Applications/Zen.app"
+hyper - c : open -a "/Applications/Discord.app" && open -a "/Applications/Discord.app"
+hyper - n : open -a "/Applications/Notion.app" && open -a "/Applications/Notion.app"
+
+hyper - d : open -a "/Applications/Beekeeper Studio Ultimate.app" && open -a "/Applications/Beekeeper Studio Ultimate.app"
+
+hyper - r : yabai -m window --toggle float; yabai -m window --toggle border
