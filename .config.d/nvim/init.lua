@@ -1,1 +1,1 @@
-require("mvmo")
+require("mvmo");
