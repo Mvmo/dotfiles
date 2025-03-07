@@ -9,9 +9,17 @@ node_modules/
 .config.d/nvim/plugin
 .config.d/coc
 .config.d/ghc
-.config.d/github-copilot/
-.config.d/gtk-2.0/
-.config.d/stripe/
+.config.d/github-copilot
+.config.d/gtk-2.0
+.config.d/stripe
+.config.d/modular
+.config.d/lazygit
+.config.d/com.strapi
+.config.d/htop
+.config.d/ngrok
+.config.d/t3stack
+.config.d/shopify
+.config.d/nodemon.json
 
 .config.d/uebersicht/widgets/running-mario.widget
 .config.d/uebersicht/widgets/mvmenu
