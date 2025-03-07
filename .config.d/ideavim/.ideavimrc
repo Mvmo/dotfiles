@@ -11,3 +11,5 @@ nmap <leader>n :NERDTreeFocus<cr>
 nmap <leader>w :w<cr>
 nmap <leader>q :q<cr>
 
+map <Leader>rr :action Refactorings.QuickListPopupAction<CR>
+
