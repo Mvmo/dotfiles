@@ -8,6 +8,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias zshconfig="nano ~/.zshrc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
+alias lg="lazygit"
 
 # Add GNU Utility binaries to path
 if type brew &>/dev/null; then
