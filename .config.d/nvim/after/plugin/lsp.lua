@@ -4,12 +4,14 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
     "tsserver",
-    "rust_analyzer"
+    "rust_analyzer",
+    "serve_d",
 })
 
 lsp.nvim_workspace()
 
 local cmp = require("cmp")
+
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 local cmp_mappings = lsp.defaults.cmp_mappings({
     ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
@@ -19,10 +21,9 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 })
 
 cmp_mappings["<Tab>"] = nil
-cmp_mappings["<S-Tab>"] = nil
 
 lsp.setup_nvim_cmp({
-    mapping = cmp_mappings
+    mapping = cmp_mappings,
 })
 
 lsp.set_preferences({
@@ -48,6 +49,7 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
     vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+    vim.keymap.set("n", "fmt", function() vim.lsp.buf.format() end, opts)
 end)
 
 lsp.setup()
@@ -56,4 +58,9 @@ vim.diagnostic.config({
     virtual_text = true
 })
 
+vim.api.nvim_create_autocmd({"BufWritePost"}, {
+    pattern = { "*.tsx", "*.ts", "*.json" },
+    callback = function() vim.lsp.buf.format() end,
+})
 
+require'lspconfig'.sourcekit.setup{}
