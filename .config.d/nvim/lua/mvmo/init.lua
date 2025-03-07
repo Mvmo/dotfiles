@@ -1,6 +1,7 @@
 require("mvmo.opts")
 require("mvmo.keymap")
-require("mvmo.packer")
+-- require("mvmo.packer")
+require("mvmo.lazy")
 
 local augroup = vim.api.nvim_create_augroup
 local mvmo_augroup = augroup("mvmo", {})
@@ -43,5 +44,4 @@ vim.cmd([[
     set cursorline
     hi CursorLine term=bold cterm=bold guibg=Grey30
 ]])
-
 
